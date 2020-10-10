@@ -4,36 +4,66 @@
 </head>
 	<style>
 		h1 {
-			font-color: blue;
-			font-weight: heavy;
+			color: blue;
+			font-weight: 500;
 		}
 		body {
-			border: 5px solid red;
+			padding: 15px;
+			margin: 0;
+			background: linear-gradient(45deg,skyblue, #80ffb0);
+		}
+		form{
+			display: block;
+			width: 50%;
+			padding: 15px;
+			margin: 0 auto;
+			background-color: white;
+			border-radius: 15px;
+			box-shadow: 0 0 5px gray;
+		}
+		input{
+			padding: 10px;
+			margin: 10px 0;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid gray;
+		}
+		button{
+			padding: 10px 20px;
+			border-radius: 10px;
+			background-color: #80ffb0;
+			color: white;
+			border: none;
+			font-size: 1rem;
+			display: block;
+			margin: 0 auto;
 		}
 		
 	</style>
 <body>
 <h1 style="text-align:center;">Registration Form</h1>
 <form action='\blank'>
-First Name:<input type="text" name="fname"><br>
-Last Name:<input type="text" name="lname"><br>
-<p>Select your gender</p>
+	<label > <strong>First Name:</strong></label> <br>
+ <input type="text" name="fname"> <br>
+	<label><strong>Last Name:</strong></label> <br>
+ <input type="text" name="lname"><br>
+<label style="display:inline-block; margin: 10px 0;"><strong>Select your gender</strong></label>
 <select name="Gender">
 	<option value="Male">Male</option>
 	<option value="Female">Female</option>
 </select>
+
 <br>
+<label for="email"><b>Email</b></label> <br>
+	<input type="email" placeholder="Email" id="email" name="email" required>
 <br>
-<label for="email"><b>Email</b></label>
-	<input type="email" placeholder="Email" name="email" required>
+<label for="password"><b>Password</b></label> <br>
+    <input type="password" placeholder="Password" id="password" name="password" required>
 <br>
-<label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Password" name="password" required>
-<br>
-<label for="pass-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="pass-repeat" required><br>
-<label>I Agree To Terms And Conditions: <input type="checkbox" name="agree" required></label><br>
-<input type="Submit" value="Submit">
+<label for="pass-repeat"><b>Repeat Password</b></label> <br>
+    <input type="password" placeholder="Repeat Password" id="pass-repeat" name="pass-repeat" required><br>
+<p style="margin: 0">I Agree To Terms And Conditions: <input style="width: auto; padding: 0" type="checkbox" name="agree" required></p><br>
+	<button type="submit" value="submit">Submit</button>
 
 </form>
 </body>
