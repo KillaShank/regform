@@ -1,2 +1,2 @@
-# regform
-Registration Form
+## RegForm
+Stylish Registration Form
